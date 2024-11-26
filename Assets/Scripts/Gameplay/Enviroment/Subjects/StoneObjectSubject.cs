@@ -3,11 +3,9 @@ using UnityEngine;
 
 namespace Shark.Gameplay.Enviroment.Subjects
 {
-    public class StoneObjectSubject : MonoBehaviour, ICollectable
+    public class StoneObjectSubject : WorldObjectSubject
     {
-        private void OnEnable() => enabled = false;
-
-        public void Collect()
+        public override void Collect()
         {
             Debug.Log("This is ROCK!");
         }

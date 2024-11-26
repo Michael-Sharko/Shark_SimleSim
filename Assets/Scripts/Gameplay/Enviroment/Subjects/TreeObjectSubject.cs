@@ -3,13 +3,11 @@ using UnityEngine;
 
 namespace Shark.Gameplay.Enviroment.Subjects
 {
-    public class TreeObjectSubject : MonoBehaviour, ICollectable
+    public class TreeObjectSubject : WorldObjectSubject
     {
-        private void OnEnable() => enabled = false;
-
-        public void Collect()
+        public override void Collect()
         {
-            Debug.Log("This is TREE!");
+            Debug.Log("This is ROCK!");
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Shark.Gameplay.Enviroment
             var collectable = other.GetComponentInParent<ICollectable>();
             if (collectable != null)
             {
+                collectable.Refresh(other.gameObject);
                 _collectables.Push(collectable);
             }
             return collectable != null;
