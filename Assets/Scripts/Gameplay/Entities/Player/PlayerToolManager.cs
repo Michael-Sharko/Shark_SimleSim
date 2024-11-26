@@ -21,7 +21,7 @@ namespace Shark.Gameplay.Entities.Player
         
         private static bool IsEmptyContainer => (_toolContainer == null || _toolContainer.Count <= 0);
 
-        public static void RefreshToolContainer(this PlayerController player, GameObject hand, PlayerToolContainer toolContainer)
+        public static void RefreshToolContainer(this PlayerController player, PlayerToolContainer toolContainer)
         {
             _toolContainer ??= new();
             _toolContainer.Clear();

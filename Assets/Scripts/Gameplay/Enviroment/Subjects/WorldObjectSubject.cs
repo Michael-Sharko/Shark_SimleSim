@@ -5,7 +5,7 @@ namespace Shark.Gameplay.Enviroment.Subjects
 {
     public abstract class WorldObjectSubject : MonoBehaviour, ICollectable
     {
-        private GameObject _child;
+        protected GameObject _child;
 
         private void OnEnable() => enabled = false;
 

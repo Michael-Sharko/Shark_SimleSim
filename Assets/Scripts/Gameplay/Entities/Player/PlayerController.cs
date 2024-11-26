@@ -38,7 +38,7 @@ namespace Shark.Gameplay.Entities.Player
         private void Initialize()
         {
             this.RefreshMovement(Vector2.zero);
-            this.RefreshToolContainer(_hand, _toolContainer);
+            this.RefreshToolContainer(_toolContainer);
 
             this.RefreshCollector();
         }
