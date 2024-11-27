@@ -7,7 +7,8 @@ namespace Shark.Gameplay.Enviroment.Subjects
     {
         public override void Collect()
         {
-            Debug.Log("This is ROCK!");
+            Debug.Log("This is TREE!");
+            _child.gameObject.SetActive(false);
         }
     }
 }
